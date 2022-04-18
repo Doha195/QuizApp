@@ -1,0 +1,18 @@
+<div class="container bg-light py-5">
+    <h1 class="display-5 fw-bold">Welcome to Quiz app</h1>
+    <p class="col-md-8 fs-4">This quiz will contain total 15 questions. Each question holds 20 Points</p>
+    <h4>Rules</h4>
+    <ol>
+        <li>The quiz will have 3 levels , each level contains 5 questions</li>
+        <li>The score nedeed to pass the first level is 40/100</li>
+        <li>The score nedeed to pass the second level is 60/100</li>
+        <li>The score nedeed to pass the third level and win is 80/100</li>
+        <li>You only have 5 minutes to pass this quiz</li>
+    </ol>
+    <h1 style="font-family: cursive;text-align: center;">All the best!</h1>
+    <div class="name col-md-4 my-3">
+        <label for="">Enter your name:</label>
+        <input #name type="text" class="form-control">
+    </div>
+    <button class="btn btn-primary btn-lg" routerLink="/question" (click)="startQuiz()">Start the Quiz!</button>
+</div>
